@@ -5,7 +5,7 @@
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
 
-namespace PHPViet\Validation\rules;
+namespace PHPViet\Validation\Rules;
 
 use Respect\Validation\Rules\AbstractRegexRule;
 

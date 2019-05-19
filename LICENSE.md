@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) Vuong Xuong Minh <vuongxuongminh@gmail.com>
+Copyright (c) PHP Viet
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

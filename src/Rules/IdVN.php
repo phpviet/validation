@@ -44,8 +44,8 @@ class IdVN extends AbstractStaticRegexRule
                 '245',
                 '28[015]'
             ]),
-            'range1' => $range1,
-            'range2' => $range2
+            '::range1::' => $range1,
+            '::range2::' => $range2
         ]);
     }
 

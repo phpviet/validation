@@ -30,4 +30,14 @@ class Validator extends BaseValidator
         return static::$factory;
     }
 
+    /**
+     * @param Factory $factory
+     */
+    public static function setFactory($factory)
+    {
+        $factory->prependRulePrefix('\\PHPViet\\Validation\\Rules\\');
+
+        static::$factory = $factory;
+    }
+
 }

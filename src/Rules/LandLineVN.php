@@ -16,7 +16,7 @@ class LandLineVN extends AbstractStaticRegexRule
 
     public static function pregFormat(): string
     {
-        return strtr('/^(\+?84|0)(::head::)\d{7}$/', '::head::', implode('|', [
+        return strtr('~^(\+?84|0)(::head::)\d{7}$~', '::head::', implode('|', [
             '20[3-9]',
             '21[0-689]',
             '22[0-25-9]',

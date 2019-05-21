@@ -16,13 +16,15 @@ class MobileVN extends AbstractStaticRegexRule
 
     public static function pregFormat(): string
     {
-        return strtr('~^(\+?84|0)(::head::)\d{7}$~', '::head::', implode('|', [
-            '3[2-9]',
-            '5[2689]',
-            '7(0|[6-9])',
-            '8[1-9]',
-            '9[0-9]',
-        ]));
+        return strtr('~^(\+?84|0)(::head::)\d{7}$~', [
+            '::head::' => implode('|', [
+                '3[2-9]',
+                '5[2689]',
+                '7(0|[6-9])',
+                '8[1-9]',
+                '9[0-9]',
+            ])
+        ]);
     }
 
 }

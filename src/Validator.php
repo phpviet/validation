@@ -11,6 +11,11 @@ use Respect\Validation\Validator as BaseValidator;
 use Respect\Validation\Factory;
 
 /**
+ * @method static Validator landLineVN()
+ * @method static Validator mobileVN()
+ * @method static Validator ipVN()
+ * @method static Validator idVN()
+ *
  * @author Vuong Minh <vuongxuongminh@gmail.com>
  * @since 1.0.0
  */

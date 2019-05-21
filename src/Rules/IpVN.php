@@ -78,7 +78,7 @@ class IpVN extends AbstractRule
 
     protected static function getIpV4Range(): array
     {
-        static $range = null;
+        static $range = [];
 
         if ($range === null) {
             $range = require(__DIR__ . '/../../resource/ip-v4-range.php');
@@ -89,7 +89,7 @@ class IpVN extends AbstractRule
 
     protected static function getIpV6Range(): array
     {
-        static $range = null;
+        static $range = [];
 
         if ($range === null) {
             $range = require(__DIR__ . '/../../resource/ip-v6-range.php');

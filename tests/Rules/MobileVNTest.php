@@ -1,6 +1,7 @@
 <?php
 /**
  * @link https://github.com/phpviet/validation
+ *
  * @copyright (c) PHP Viet
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
@@ -12,6 +13,7 @@ use PHPViet\Validation\Rules\MobileVN;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
+ *
  * @since 1.0.0
  */
 class MobileVNTest extends TestCase
@@ -23,7 +25,7 @@ class MobileVNTest extends TestCase
 
     protected function setUp()
     {
-        $this->validator = new MobileVN;
+        $this->validator = new MobileVN();
     }
 
     /**
@@ -52,7 +54,7 @@ class MobileVNTest extends TestCase
             ['84982527982'],
             ['84973776072'],
             ['+84917749254'],
-            ['84904770053']
+            ['84904770053'],
         ];
     }
 
@@ -77,7 +79,7 @@ class MobileVNTest extends TestCase
             ['02608565499'],
             ['02778564599'],
             ['02898564299'],
-            ['02942564799']
+            ['02942564799'],
         ];
     }
 }

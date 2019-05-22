@@ -1,6 +1,7 @@
 <?php
 /**
  * @link https://github.com/phpviet/validation
+ *
  * @copyright (c) PHP Viet
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
@@ -12,11 +13,11 @@ use PHPViet\Validation\Rules\IpVN;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
+ *
  * @since 1.0.0
  */
 class IpVNTest extends TestCase
 {
-
     /**
      * @var IpVN
      */
@@ -32,10 +33,9 @@ class IpVNTest extends TestCase
      */
     protected $validatorV6;
 
-
     protected function setUp()
     {
-        $this->validator = new IpVN;
+        $this->validator = new IpVN();
         $this->validatorV4 = new IpVN(IpVN::IPV4);
         $this->validatorV6 = new IpVN(IpVN::IPV6);
     }
@@ -130,7 +130,7 @@ class IpVNTest extends TestCase
             ['117.2.17.21'],
             ['117.2.155.16'],
             ['117.2.121.203'],
-            ['180.148.4.194']
+            ['180.148.4.194'],
         ];
     }
 
@@ -140,7 +140,7 @@ class IpVNTest extends TestCase
             ['2405:4800:102:1::3'],
             ['2001:df0:66:40::16'],
             ['2406:9c80::6000:66'],
-            ['2405:9d80:4::32']
+            ['2405:9d80:4::32'],
         ];
     }
 
@@ -155,7 +155,7 @@ class IpVNTest extends TestCase
             ['173.194.207.26'],
             ['69.171.251.251'],
             ['204.141.42.121'],
-            ['216.52.72.121']
+            ['216.52.72.121'],
         ];
     }
 
@@ -170,7 +170,7 @@ class IpVNTest extends TestCase
             ['2405:4800:102:1::3'],
             ['2001:df0:66:40::16'],
             ['2406:9c80::6000:66'],
-            ['2405:9d80:4::32']
+            ['2405:9d80:4::32'],
         ];
     }
 
@@ -188,7 +188,7 @@ class IpVNTest extends TestCase
             ['117.2.17.21'],
             ['117.2.155.16'],
             ['117.2.121.203'],
-            ['180.148.4.194']
+            ['180.148.4.194'],
         ];
     }
 }

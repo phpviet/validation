@@ -1,6 +1,7 @@
 <?php
 /**
  * @link https://github.com/phpviet/validation
+ *
  * @copyright (c) PHP Viet
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
@@ -12,6 +13,7 @@ use PHPViet\Validation\Rules\IdVN;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
+ *
  * @since 1.0.0
  */
 class IdVNTest extends TestCase
@@ -23,7 +25,7 @@ class IdVNTest extends TestCase
 
     protected function setUp()
     {
-        $this->validator = new IdVN;
+        $this->validator = new IdVN();
     }
 
     /**
@@ -74,7 +76,7 @@ class IdVNTest extends TestCase
             ['649879870111'],
             ['776464646777'],
             ['866646777797'],
-            ['964646497971']
+            ['964646497971'],
         ];
     }
 
@@ -97,7 +99,7 @@ class IdVNTest extends TestCase
             ['596499998877'],
             ['699879870111'],
             ['856646777797'],
-            ['994646497971']
+            ['994646497971'],
         ];
     }
 }

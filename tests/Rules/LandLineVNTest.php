@@ -1,6 +1,7 @@
 <?php
 /**
  * @link https://github.com/phpviet/validation
+ *
  * @copyright (c) PHP Viet
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
@@ -12,6 +13,7 @@ use PHPViet\Validation\Rules\LandLineVN;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
+ *
  * @since 1.0.0
  */
 class LandLineVNTest extends TestCase
@@ -23,7 +25,7 @@ class LandLineVNTest extends TestCase
 
     protected function setUp()
     {
-        $this->validator = new LandLineVN;
+        $this->validator = new LandLineVN();
     }
 
     /**

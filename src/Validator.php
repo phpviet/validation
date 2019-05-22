@@ -1,14 +1,15 @@
 <?php
 /**
  * @link https://github.com/phpviet/validation
+ *
  * @copyright (c) PHP Viet
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
 
 namespace PHPViet\Validation;
 
-use Respect\Validation\Validator as BaseValidator;
 use Respect\Validation\Factory;
+use Respect\Validation\Validator as BaseValidator;
 
 /**
  * @method static Validator landLineVN()
@@ -17,11 +18,11 @@ use Respect\Validation\Factory;
  * @method static Validator idVN()
  *
  * @author Vuong Minh <vuongxuongminh@gmail.com>
+ *
  * @since 1.0.0
  */
 class Validator extends BaseValidator
 {
-
     /**
      * @return Factory
      */
@@ -44,5 +45,4 @@ class Validator extends BaseValidator
 
         static::$factory = $factory;
     }
-
 }

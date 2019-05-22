@@ -1,6 +1,7 @@
 <?php
 /**
  * @link https://github.com/phpviet/validation
+ *
  * @copyright (c) PHP Viet
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
@@ -9,11 +10,11 @@ namespace PHPViet\Validation\Rules;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
+ *
  * @since 1.0.0
  */
 class LandLineVN extends AbstractStaticRegexRule
 {
-
     public static function pregFormat(): string
     {
         return strtr('~^(\+?84|0)(::head::)\d{7}$~', [
@@ -27,8 +28,8 @@ class LandLineVN extends AbstractStaticRegexRule
                 '26[0-39]',
                 '27[0-7]',
                 '28[0-9]',
-                '29[0-4679]'
-            ])
+                '29[0-4679]',
+            ]),
         ]);
     }
 }

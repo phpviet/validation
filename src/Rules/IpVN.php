@@ -1,19 +1,21 @@
 <?php
 /**
  * @link https://github.com/phpviet/validation
+ *
  * @copyright (c) PHP Viet
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
 
 namespace PHPViet\Validation\Rules;
 
-use IPLib\Factory as IpFactory;
-use IPLib\Address\Type as IpType;
 use IPLib\Address\AddressInterface as IpInterface;
+use IPLib\Address\Type as IpType;
+use IPLib\Factory as IpFactory;
 use Respect\Validation\Rules\AbstractRule;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
+ *
  * @since 1.0.0
  */
 class IpVN extends AbstractRule
@@ -32,17 +34,14 @@ class IpVN extends AbstractRule
     public function validate($input)
     {
         if (!$ip = IpFactory::addressFromString($input)) {
-
             return false;
         }
 
         if (($version = $ip->getAddressType()) !== $this->version && null !== $this->version) {
-
             return false;
         }
 
         if (!$ranges = $this->getIpRanges($input, $version)) {
-
             return false;
         }
 
@@ -60,7 +59,6 @@ class IpVN extends AbstractRule
         }
 
         while (!is_null($key = array_shift($keys))) {
-
             if (isset($map[$key])) {
                 $map = $map[$key];
 
@@ -68,7 +66,6 @@ class IpVN extends AbstractRule
             }
 
             if (isset($map['range'])) {
-
                 return $map['range'];
             }
 
@@ -79,11 +76,9 @@ class IpVN extends AbstractRule
     protected function validateIpInRange(IpInterface $ip, array $ranges)
     {
         foreach ($ranges as $range) {
-
             [$begin, $end] = $range;
 
             if (($subnet = IpFactory::rangeFromBoundaries($begin, $end)) && $subnet->contains($ip)) {
-
                 return true;
             }
         }
@@ -96,7 +91,7 @@ class IpVN extends AbstractRule
         static $range = null;
 
         if (null === $range) {
-            $range = require(__DIR__ . '/../../resource/ip-v4-range.php');
+            $range = require __DIR__.'/../../resource/ip-v4-range.php';
         }
 
         return $range;
@@ -107,10 +102,9 @@ class IpVN extends AbstractRule
         static $range = null;
 
         if (null === $range) {
-            $range = require(__DIR__ . '/../../resource/ip-v6-range.php');
+            $range = require __DIR__.'/../../resource/ip-v6-range.php';
         }
 
         return $range;
     }
-
 }

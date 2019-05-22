@@ -49,17 +49,6 @@ return array(
                 ),
             'de8' =>
                 array(
-                    3 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:de8:3::',
-                                            1 => '2001:de8:3:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
                     'a' =>
                         array(
                             'range' =>
@@ -71,12 +60,50 @@ return array(
                                         ),
                                 ),
                         ),
+                    3 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:de8:3::',
+                                            1 => '2001:de8:3:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
                 ),
             'df0' =>
                 array(
+                    '29c' =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df0:29c::',
+                                            1 => '2001:df0:29c:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                    '2a00' =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df0:2a00::',
+                                            1 => '2001:df0:2a00:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
                     'range' =>
                         array(
                             0 =>
+                                array(
+                                    0 => '2001:df0:c::',
+                                    1 => '2001:df0:13:ffff:ffff:ffff:ffff:ffff',
+                                ),
+                            1 =>
                                 array(
                                     0 => '2001:df0:19::',
                                     1 => '2001:df0:1d:ffff:ffff:ffff:ffff:ffff',
@@ -115,28 +142,6 @@ return array(
                                         ),
                                 ),
                         ),
-                    '29c' =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df0:29c::',
-                                            1 => '2001:df0:29c:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
-                    '2e8' =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df0:2e8::',
-                                            1 => '2001:df0:2e8:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
                     1380 =>
                         array(
                             'range' =>
@@ -145,17 +150,6 @@ return array(
                                         array(
                                             0 => '2001:df0:1380::',
                                             1 => '2001:df0:1380:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
-                    '2a00' =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df0:2a00::',
-                                            1 => '2001:df0:2a00:ffff:ffff:ffff:ffff:ffff',
                                         ),
                                 ),
                         ),
@@ -192,6 +186,17 @@ return array(
                                         ),
                                 ),
                         ),
+                    '2e8' =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df0:2e8::',
+                                            1 => '2001:df0:2e8:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
                     '9b00' =>
                         array(
                             'range' =>
@@ -220,28 +225,6 @@ return array(
                 ),
             'df2' =>
                 array(
-                    6600 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df2:6600::',
-                                            1 => '2001:df2:6600:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
-                    6900 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df2:6900::',
-                                            1 => '2001:df2:6900:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
                     '7b00' =>
                         array(
                             'range' =>
@@ -319,20 +302,31 @@ return array(
                                         ),
                                 ),
                         ),
-                ),
-            'df3' =>
-                array(
-                    900 =>
+                    6600 =>
                         array(
                             'range' =>
                                 array(
                                     0 =>
                                         array(
-                                            0 => '2001:df3:900::',
-                                            1 => '2001:df3:900:ffff:ffff:ffff:ffff:ffff',
+                                            0 => '2001:df2:6600::',
+                                            1 => '2001:df2:6600:ffff:ffff:ffff:ffff:ffff',
                                         ),
                                 ),
                         ),
+                    6900 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df2:6900::',
+                                            1 => '2001:df2:6900:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                ),
+            'df3' =>
+                array(
                     '2d00' =>
                         array(
                             'range' =>
@@ -355,17 +349,6 @@ return array(
                                         ),
                                 ),
                         ),
-                    8600 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df3:8600::',
-                                            1 => '2001:df3:8600:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
                     '8a00' =>
                         array(
                             'range' =>
@@ -385,17 +368,6 @@ return array(
                                         array(
                                             0 => '2001:df3:8e00::',
                                             1 => '2001:df3:8e00:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
-                    9200 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df3:9200::',
-                                            1 => '2001:df3:9200:ffff:ffff:ffff:ffff:ffff',
                                         ),
                                 ),
                         ),
@@ -454,42 +426,42 @@ return array(
                                         ),
                                 ),
                         ),
+                    900 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df3:900::',
+                                            1 => '2001:df3:900:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                    8600 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df3:8600::',
+                                            1 => '2001:df3:8600:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                    9200 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df3:9200::',
+                                            1 => '2001:df3:9200:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
                 ),
             'df4' =>
                 array(
-                    100 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df4:100::',
-                                            1 => '2001:df4:100:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
-                    700 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df4:700::',
-                                            1 => '2001:df4:700:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
-                    2900 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df4:2900::',
-                                            1 => '2001:df4:2900:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
                     '2b00' =>
                         array(
                             'range' =>
@@ -509,28 +481,6 @@ return array(
                                         array(
                                             0 => '2001:df4:2d00::',
                                             1 => '2001:df4:2d00:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
-                    9500 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df4:9500::',
-                                            1 => '2001:df4:9500:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
-                    9700 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df4:9700::',
-                                            1 => '2001:df4:9700:ffff:ffff:ffff:ffff:ffff',
                                         ),
                                 ),
                         ),
@@ -611,20 +561,64 @@ return array(
                                         ),
                                 ),
                         ),
-                ),
-            'df5' =>
-                array(
-                    4900 =>
+                    100 =>
                         array(
                             'range' =>
                                 array(
                                     0 =>
                                         array(
-                                            0 => '2001:df5:4900::',
-                                            1 => '2001:df5:4900:ffff:ffff:ffff:ffff:ffff',
+                                            0 => '2001:df4:100::',
+                                            1 => '2001:df4:100:ffff:ffff:ffff:ffff:ffff',
                                         ),
                                 ),
                         ),
+                    700 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df4:700::',
+                                            1 => '2001:df4:700:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                    2900 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df4:2900::',
+                                            1 => '2001:df4:2900:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                    9500 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df4:9500::',
+                                            1 => '2001:df4:9500:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                    9700 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df4:9700::',
+                                            1 => '2001:df4:9700:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                ),
+            'df5' =>
+                array(
                     '4a00' =>
                         array(
                             'range' =>
@@ -713,20 +707,20 @@ return array(
                                         ),
                                 ),
                         ),
-                ),
-            'df6' =>
-                array(
-                    1600 =>
+                    4900 =>
                         array(
                             'range' =>
                                 array(
                                     0 =>
                                         array(
-                                            0 => '2001:df6:1600::',
-                                            1 => '2001:df6:1600:ffff:ffff:ffff:ffff:ffff',
+                                            0 => '2001:df5:4900::',
+                                            1 => '2001:df5:4900:ffff:ffff:ffff:ffff:ffff',
                                         ),
                                 ),
                         ),
+                ),
+            'df6' =>
+                array(
                     '1a00' =>
                         array(
                             'range' =>
@@ -749,17 +743,6 @@ return array(
                                         ),
                                 ),
                         ),
-                    2200 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df6:2200::',
-                                            1 => '2001:df6:2200:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
                     '2c00' =>
                         array(
                             'range' =>
@@ -771,17 +754,6 @@ return array(
                                         ),
                                 ),
                         ),
-                    3400 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df6:3400::',
-                                            1 => '2001:df6:3400:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
                     '6d00' =>
                         array(
                             'range' =>
@@ -790,17 +762,6 @@ return array(
                                         array(
                                             0 => '2001:df6:6d00::',
                                             1 => '2001:df6:6d00:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
-                    7000 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df6:7000::',
-                                            1 => '2001:df6:7000:ffff:ffff:ffff:ffff:ffff',
                                         ),
                                 ),
                         ),
@@ -837,64 +798,53 @@ return array(
                                         ),
                                 ),
                         ),
+                    1600 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df6:1600::',
+                                            1 => '2001:df6:1600:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                    2200 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df6:2200::',
+                                            1 => '2001:df6:2200:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                    3400 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df6:3400::',
+                                            1 => '2001:df6:3400:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                    7000 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df6:7000::',
+                                            1 => '2001:df6:7000:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
                 ),
             'df7' =>
                 array(
-                    1500 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df7:1500::',
-                                            1 => '2001:df7:1500:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
-                    1700 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df7:1700::',
-                                            1 => '2001:df7:1700:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
-                    4700 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df7:4700::',
-                                            1 => '2001:df7:4700:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
-                    4900 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df7:4900::',
-                                            1 => '2001:df7:4900:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
-                    7300 =>
-                        array(
-                            'range' =>
-                                array(
-                                    0 =>
-                                        array(
-                                            0 => '2001:df7:7300::',
-                                            1 => '2001:df7:7300:ffff:ffff:ffff:ffff:ffff',
-                                        ),
-                                ),
-                        ),
                     'a900' =>
                         array(
                             'range' =>
@@ -950,6 +900,61 @@ return array(
                                         ),
                                 ),
                         ),
+                    1500 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df7:1500::',
+                                            1 => '2001:df7:1500:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                    1700 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df7:1700::',
+                                            1 => '2001:df7:1700:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                    4700 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df7:4700::',
+                                            1 => '2001:df7:4700:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                    4900 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df7:4900::',
+                                            1 => '2001:df7:4900:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
+                    7300 =>
+                        array(
+                            'range' =>
+                                array(
+                                    0 =>
+                                        array(
+                                            0 => '2001:df7:7300::',
+                                            1 => '2001:df7:7300:ffff:ffff:ffff:ffff:ffff',
+                                        ),
+                                ),
+                        ),
                 ),
             'ee0' =>
                 array(
@@ -965,39 +970,6 @@ return array(
         ),
     2400 =>
         array(
-            6540 =>
-                array(
-                    'range' =>
-                        array(
-                            0 =>
-                                array(
-                                    0 => '2400:6540::',
-                                    1 => '2400:6540:ffff:ffff:ffff:ffff:ffff:ffff',
-                                ),
-                        ),
-                ),
-            9100 =>
-                array(
-                    'range' =>
-                        array(
-                            0 =>
-                                array(
-                                    0 => '2400:9100::',
-                                    1 => '2400:9100:ffff:ffff:ffff:ffff:ffff:ffff',
-                                ),
-                        ),
-                ),
-            9380 =>
-                array(
-                    'range' =>
-                        array(
-                            0 =>
-                                array(
-                                    0 => '2400:9380:a0a0::',
-                                    1 => '2400:9380:a0af:ffff:ffff:ffff:ffff:ffff',
-                                ),
-                        ),
-                ),
             '9b40' =>
                 array(
                     'range' =>
@@ -1072,6 +1044,49 @@ return array(
                                 array(
                                     0 => '2400:ed40::',
                                     1 => '2400:ed40:ffff:ffff:ffff:ffff:ffff:ffff',
+                                ),
+                        ),
+                ),
+            6540 =>
+                array(
+                    'range' =>
+                        array(
+                            0 =>
+                                array(
+                                    0 => '2400:6540::',
+                                    1 => '2400:6540:ffff:ffff:ffff:ffff:ffff:ffff',
+                                ),
+                        ),
+                ),
+            9100 =>
+                array(
+                    'range' =>
+                        array(
+                            0 =>
+                                array(
+                                    0 => '2400:9100::',
+                                    1 => '2400:9100:ffff:ffff:ffff:ffff:ffff:ffff',
+                                ),
+                        ),
+                ),
+            9380 =>
+                array(
+                    'range' =>
+                        array(
+                            0 =>
+                                array(
+                                    0 => '2400:9380:80a0::',
+                                    1 => '2400:9380:80af:ffff:ffff:ffff:ffff:ffff',
+                                ),
+                            1 =>
+                                array(
+                                    0 => '2400:9380:90a0::',
+                                    1 => '2400:9380:90af:ffff:ffff:ffff:ffff:ffff',
+                                ),
+                            2 =>
+                                array(
+                                    0 => '2400:9380:a0a0::',
+                                    1 => '2400:9380:a0af:ffff:ffff:ffff:ffff:ffff',
                                 ),
                         ),
                 ),
@@ -1194,6 +1209,11 @@ return array(
                         array(
                             0 =>
                                 array(
+                                    0 => '2401:e800::',
+                                    1 => '2401:e800:100:ffff:ffff:ffff:ffff:ffff',
+                                ),
+                            1 =>
+                                array(
                                     0 => '2401:e800:108::',
                                     1 => '2401:e800:ffff:ffff:ffff:ffff:ffff:ffff',
                                 ),
@@ -1246,14 +1266,14 @@ return array(
         ),
     2402 =>
         array(
-            800 =>
+            '9d80' =>
                 array(
                     'range' =>
                         array(
                             0 =>
                                 array(
-                                    0 => '2402:800::',
-                                    1 => '2402:800:ffff:ffff:ffff:ffff:ffff:ffff',
+                                    0 => '2402:9d80::',
+                                    1 => '2402:9d80:ffff:ffff:ffff:ffff:ffff:ffff',
                                 ),
                         ),
                 ),
@@ -1265,39 +1285,6 @@ return array(
                                 array(
                                     0 => '2402:b40::',
                                     1 => '2402:b40:ffff:ffff:ffff:ffff:ffff:ffff',
-                                ),
-                        ),
-                ),
-            5300 =>
-                array(
-                    'range' =>
-                        array(
-                            0 =>
-                                array(
-                                    0 => '2402:5300::',
-                                    1 => '2402:5300:ffff:ffff:ffff:ffff:ffff:ffff',
-                                ),
-                        ),
-                ),
-            6440 =>
-                array(
-                    'range' =>
-                        array(
-                            0 =>
-                                array(
-                                    0 => '2402:6440::',
-                                    1 => '2402:6440:ffff:ffff:ffff:ffff:ffff:ffff',
-                                ),
-                        ),
-                ),
-            '9d80' =>
-                array(
-                    'range' =>
-                        array(
-                            0 =>
-                                array(
-                                    0 => '2402:9d80::',
-                                    1 => '2402:9d80:ffff:ffff:ffff:ffff:ffff:ffff',
                                 ),
                         ),
                 ),
@@ -1334,20 +1321,42 @@ return array(
                                 ),
                         ),
                 ),
-        ),
-    2403 =>
-        array(
-            6000 =>
+            800 =>
                 array(
                     'range' =>
                         array(
                             0 =>
                                 array(
-                                    0 => '2403:6000::',
-                                    1 => '2403:6000:ffff:ffff:ffff:ffff:ffff:ffff',
+                                    0 => '2402:800::',
+                                    1 => '2402:800:ffff:ffff:ffff:ffff:ffff:ffff',
                                 ),
                         ),
                 ),
+            5300 =>
+                array(
+                    'range' =>
+                        array(
+                            0 =>
+                                array(
+                                    0 => '2402:5300::',
+                                    1 => '2402:5300:ffff:ffff:ffff:ffff:ffff:ffff',
+                                ),
+                        ),
+                ),
+            6440 =>
+                array(
+                    'range' =>
+                        array(
+                            0 =>
+                                array(
+                                    0 => '2402:6440::',
+                                    1 => '2402:6440:ffff:ffff:ffff:ffff:ffff:ffff',
+                                ),
+                        ),
+                ),
+        ),
+    2403 =>
+        array(
             '6a40' =>
                 array(
                     'range' =>
@@ -1400,6 +1409,17 @@ return array(
                                 array(
                                     0 => '2403:e200::',
                                     1 => '2403:e200:ffff:ffff:ffff:ffff:ffff:ffff',
+                                ),
+                        ),
+                ),
+            6000 =>
+                array(
+                    'range' =>
+                        array(
+                            0 =>
+                                array(
+                                    0 => '2403:6000::',
+                                    1 => '2403:6000:ffff:ffff:ffff:ffff:ffff:ffff',
                                 ),
                         ),
                 ),
@@ -1552,17 +1572,6 @@ return array(
         ),
     2405 =>
         array(
-            4800 =>
-                array(
-                    'range' =>
-                        array(
-                            0 =>
-                                array(
-                                    0 => '2405:4800::',
-                                    1 => '2405:4800:ffff:ffff:ffff:ffff:ffff:ffff',
-                                ),
-                        ),
-                ),
             '9d80' =>
                 array(
                     'range' =>
@@ -1607,20 +1616,20 @@ return array(
                                 ),
                         ),
                 ),
-        ),
-    2406 =>
-        array(
-            9000 =>
+            4800 =>
                 array(
                     'range' =>
                         array(
                             0 =>
                                 array(
-                                    0 => '2406:9000::',
-                                    1 => '2406:9000:ffff:ffff:ffff:ffff:ffff:ffff',
+                                    0 => '2405:4800::',
+                                    1 => '2405:4800:ffff:ffff:ffff:ffff:ffff:ffff',
                                 ),
                         ),
                 ),
+        ),
+    2406 =>
+        array(
             '9c80' =>
                 array(
                     'range' =>
@@ -1629,6 +1638,17 @@ return array(
                                 array(
                                     0 => '2406:9c80::',
                                     1 => '2406:9c80:ffff:ffff:ffff:ffff:ffff:ffff',
+                                ),
+                        ),
+                ),
+            9000 =>
+                array(
+                    'range' =>
+                        array(
+                            0 =>
+                                array(
+                                    0 => '2406:9000::',
+                                    1 => '2406:9000:ffff:ffff:ffff:ffff:ffff:ffff',
                                 ),
                         ),
                 ),
@@ -1719,5 +1739,5 @@ return array(
                                 ),
                         ),
                 ),
-        ),
+        )
 );

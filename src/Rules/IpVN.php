@@ -18,6 +18,16 @@ use Respect\Validation\Rules\AbstractRule;
  */
 class IpVN extends AbstractRule
 {
+    const IPV4 = IpType::T_IPv4;
+
+    const IPV6 = IpType::T_IPv6;
+
+    public $version;
+
+    public function __construct($version = null)
+    {
+        $this->version = $version;
+    }
 
     public function validate($input)
     {
@@ -26,7 +36,12 @@ class IpVN extends AbstractRule
             return false;
         }
 
-        if (!$ranges = $this->getIpRanges($input, $ip->getAddressType())) {
+        if (($version = $ip->getAddressType()) !== $this->version && null !== $this->version) {
+
+            return false;
+        }
+
+        if (!$ranges = $this->getIpRanges($input, $version)) {
 
             return false;
         }
@@ -34,9 +49,9 @@ class IpVN extends AbstractRule
         return $this->validateIpInRange($ip, $ranges);
     }
 
-    protected function getIpRanges(string $ip, int $type): ?array
+    protected function getIpRanges(string $ip, int $version): ?array
     {
-        if ($type === IpType::T_IPv4) {
+        if (self::IPV4 === $version) {
             $keys = explode('.', $ip);
             $map = static::getIpV4Range();
         } else {
@@ -78,9 +93,9 @@ class IpVN extends AbstractRule
 
     protected static function getIpV4Range(): array
     {
-        static $range = [];
+        static $range = null;
 
-        if ($range === null) {
+        if (null === $range) {
             $range = require(__DIR__ . '/../../resource/ip-v4-range.php');
         }
 
@@ -89,9 +104,9 @@ class IpVN extends AbstractRule
 
     protected static function getIpV6Range(): array
     {
-        static $range = [];
+        static $range = null;
 
-        if ($range === null) {
+        if (null === $range) {
             $range = require(__DIR__ . '/../../resource/ip-v6-range.php');
         }
 

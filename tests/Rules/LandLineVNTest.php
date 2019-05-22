@@ -39,7 +39,7 @@ class LandLineVNTest extends TestCase
     /**
      * @dataProvider providerInvalid
      */
-    public function testInvalidShouldThrowPhoneException($input)
+    public function testInvalidShouldThrowException($input)
     {
         $this->expectException('\PHPViet\Validation\Exceptions\LandLineVNException');
         $this->assertFalse($this->validator->__invoke($input));

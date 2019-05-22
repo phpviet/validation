@@ -20,7 +20,7 @@ class IdVN extends AbstractStaticRegexRule
         $oldId = self::idPregFormatPart(true);
         $cId = self::cIdPregFormatPart();
 
-        return '~^(' . implode(')|(', [$id, $oldId, $cId]) . ')$~';
+        return '~^((' . implode(')|(', [$id, $oldId, $cId]) . '))$~';
     }
 
     private static function idPregFormatPart(bool $old): string

@@ -16,13 +16,27 @@ use Respect\Validation\Exceptions\ValidationException;
 class IpVNException extends ValidationException
 {
 
+    const STANDARD = 0;
+
+    const VERSION = 1;
+
     public static $defaultTemplates = [
         self::MODE_DEFAULT => [
-            self::STANDARD => '{{name}} must be an IP address of Viet Nam'
+            self::STANDARD => '{{name}} must be an IP address of Viet Nam',
+            self::VERSION => '{{name}} must be an IP version {{version}}'
         ],
         self::MODE_NEGATIVE => [
-            self::STANDARD => '{{name}} must be an IP address of Viet Nam'
+            self::STANDARD => '{{name}} must be an IP address of Viet Nam',
+            self::VERSION => '{{name}} must be an IP version {{version}}'
         ],
     ];
 
+    public function chooseTemplate()
+    {
+        if (null !== $this->getParam('version')) {
+            return static::VERSION;
+        } else {
+            return static::STANDARD;
+        }
+    }
 }

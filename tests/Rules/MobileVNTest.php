@@ -39,7 +39,7 @@ class MobileVNTest extends TestCase
     /**
      * @dataProvider providerInvalid
      */
-    public function testInvalidShouldThrowPhoneException($input)
+    public function testInvalidShouldThrowException($input)
     {
         $this->expectException('\PHPViet\Validation\Exceptions\MobileVNException');
         $this->assertFalse($this->validator->__invoke($input));
@@ -66,8 +66,8 @@ class MobileVNTest extends TestCase
             ['0603366854'],
             ['070336685a'],
             ['+842838564399'],
-            ['02838564399'],
-            ['842838564399'],
+            [' 02838564399'],
+            ['@842838564399'],
             ['02038364399'],
             ['02168964399'],
             ['02258864399'],

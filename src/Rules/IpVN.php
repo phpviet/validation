@@ -29,7 +29,7 @@ class IpVN extends AbstractRule
 
     public function __construct(?int $version = null)
     {
-        if(null !== $version && !$this->isSupportedVersion($version)) {
+        if (null !== $version && !$this->isSupportedVersion($version)) {
             throw new ComponentException(sprintf('Only versions %d, %d are supported: %d given', self::IPV4, self::IPV6, $version));
         }
 
@@ -117,5 +117,4 @@ class IpVN extends AbstractRule
     {
         return self::IPV4 === $version || self::IPV6 === $version;
     }
-
 }

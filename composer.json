@@ -2,10 +2,8 @@
     "name": "phpviet/validation",
     "description": "Thư viện hổ trợ kiểm tra dữ liệu đặc thù trong nước",
     "keywords": [
-        "validation-viet-nam",
-        "validator-viet-nam",
-		"validation-viet",
-		"validator-viet"
+        "phpviet",
+        "validation"
     ],
     "homepage": "https://github.com/phpviet/validation",
     "license": "MIT",

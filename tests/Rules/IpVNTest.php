@@ -70,6 +70,12 @@ class IpVNTest extends TestCase
         $this->assertTrue($this->validatorV6->check($input));
     }
 
+    public function testInvalidVersionShouldThrowException()
+    {
+        $this->expectException('\Respect\Validation\Exceptions\ComponentException');
+        new IpVN(100);
+    }
+
     /**
      * @dataProvider providerInvalid
      */

@@ -11,6 +11,7 @@ namespace PHPViet\Validation\Rules;
 use IPLib\Address\AddressInterface as IpInterface;
 use IPLib\Address\Type as IpType;
 use IPLib\Factory as IpFactory;
+use Respect\Validation\Exceptions\ComponentException;
 use Respect\Validation\Rules\AbstractRule;
 
 /**
@@ -26,8 +27,12 @@ class IpVN extends AbstractRule
 
     public $version;
 
-    public function __construct($version = null)
+    public function __construct(?int $version = null)
     {
+        if(null !== $version && !$this->isSupportedVersion($version)) {
+            throw new ComponentException(sprintf('Only versions %d, %d are supported: %d given', self::IPV4, self::IPV6, $version));
+        }
+
         $this->version = $version;
     }
 
@@ -107,4 +112,10 @@ class IpVN extends AbstractRule
 
         return $range;
     }
+
+    protected function isSupportedVersion(int $version): bool
+    {
+        return self::IPV4 === $version || self::IPV6 === $version;
+    }
+
 }

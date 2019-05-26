@@ -70,11 +70,7 @@ class IpVN extends AbstractRule
                 continue;
             }
 
-            if (isset($map['range'])) {
-                return $map['range'];
-            }
-
-            return null;
+            return $map['range'] ?? null;
         }
     }
 

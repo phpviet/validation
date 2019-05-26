@@ -21,7 +21,7 @@ class MobileVN extends AbstractStaticRegexRule
             '::head::' => implode('|', [
                 '3[2-9]',
                 '5[2689]',
-                '7(0|[6-9])',
+                '7[06-9]',
                 '8[1-9]',
                 '9[0-9]',
             ]),

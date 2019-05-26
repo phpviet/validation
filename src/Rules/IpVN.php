@@ -96,7 +96,7 @@ class IpVN extends AbstractRule
         static $range = null;
 
         if (null === $range) {
-            $range = require __DIR__.'/../../resource/ip-v4-range.php';
+            $range = require __DIR__.'/../../resources/ip-v4-range.php';
         }
 
         return $range;
@@ -107,7 +107,7 @@ class IpVN extends AbstractRule
         static $range = null;
 
         if (null === $range) {
-            $range = require __DIR__.'/../../resource/ip-v6-range.php';
+            $range = require __DIR__.'/../../resources/ip-v6-range.php';
         }
 
         return $range;

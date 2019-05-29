@@ -14,7 +14,7 @@ use Respect\Validation\Validator as BaseValidator;
 /**
  * @method static Validator landLineVN()
  * @method static Validator mobileVN()
- * @method static Validator ipVN(int $version)
+ * @method static Validator ipVN(?int $version = null)
  * @method static Validator idVN()
  *
  * @author Vuong Minh <vuongxuongminh@gmail.com>

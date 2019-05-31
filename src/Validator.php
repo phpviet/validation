@@ -18,7 +18,6 @@ use Respect\Validation\Validator as BaseValidator;
  * @method static Validator idVN()
  *
  * @author Vuong Minh <vuongxuongminh@gmail.com>
- *
  * @since 1.0.0
  */
 class Validator extends BaseValidator

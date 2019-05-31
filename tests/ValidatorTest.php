@@ -14,7 +14,6 @@ use Respect\Validation\Factory;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
- *
  * @since 1.0.0
  */
 class ValidatorTest extends TestCase

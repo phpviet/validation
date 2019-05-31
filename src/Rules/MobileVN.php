@@ -10,7 +10,6 @@ namespace PHPViet\Validation\Rules;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
- *
  * @since 1.0.0
  */
 class MobileVN extends AbstractStaticRegexRule

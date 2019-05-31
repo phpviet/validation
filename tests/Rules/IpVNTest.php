@@ -13,7 +13,6 @@ use PHPViet\Validation\Rules\IpVN;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
- *
  * @since 1.0.0
  */
 class IpVNTest extends TestCase

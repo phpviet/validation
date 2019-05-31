@@ -16,7 +16,6 @@ use Respect\Validation\Rules\AbstractRule;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
- *
  * @since 1.0.0
  */
 class IpVN extends AbstractRule
@@ -36,7 +35,7 @@ class IpVN extends AbstractRule
         $this->version = $version;
     }
 
-    public function validate($input)
+    public function validate($input): bool
     {
         if (!$ip = IpFactory::addressFromString($input)) {
             return false;
@@ -72,9 +71,11 @@ class IpVN extends AbstractRule
 
             return $map['range'] ?? null;
         }
+
+        return null;
     }
 
-    protected function validateIpInRange(IpInterface $ip, array $ranges)
+    protected function validateIpInRange(IpInterface $ip, array $ranges): bool
     {
         foreach ($ranges as $range) {
             [$begin, $end] = $range;
@@ -92,7 +93,7 @@ class IpVN extends AbstractRule
         static $range = null;
 
         if (null === $range) {
-            $range = require __DIR__.'/../../resources/ip-v4-range.php';
+            $range = require __DIR__ . '/../../resources/ip-v4-range.php';
         }
 
         return $range;
@@ -103,7 +104,7 @@ class IpVN extends AbstractRule
         static $range = null;
 
         if (null === $range) {
-            $range = require __DIR__.'/../../resources/ip-v6-range.php';
+            $range = require __DIR__ . '/../../resources/ip-v6-range.php';
         }
 
         return $range;

@@ -12,12 +12,11 @@ use Respect\Validation\Rules\AbstractRegexRule;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
- *
  * @since 1.0.0
  */
 abstract class AbstractStaticRegexRule extends AbstractRegexRule
 {
-    protected function getPregFormat()
+    protected function getPregFormat(): string
     {
         return static::pregFormat();
     }

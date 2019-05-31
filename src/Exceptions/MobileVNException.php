@@ -12,7 +12,6 @@ use Respect\Validation\Exceptions\ValidationException;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
- *
  * @since 1.0.0
  */
 class MobileVNException extends ValidationException
@@ -22,7 +21,7 @@ class MobileVNException extends ValidationException
             self::STANDARD => '{{name}} must be a valid Viet Nam mobile phone number',
         ],
         self::MODE_NEGATIVE => [
-            self::STANDARD => '{{name}} must be a valid Viet Nam mobile phone number',
+            self::STANDARD => '{{name}} must not be a valid Viet Nam mobile phone number',
         ],
     ];
 }

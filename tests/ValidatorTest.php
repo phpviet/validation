@@ -9,8 +9,8 @@
 namespace PHPViet\Validation\Tests;
 
 use PHPUnit\Framework\TestCase;
-use PHPViet\Validation\Validator;
 use Respect\Validation\Factory;
+use PHPViet\Validation\Validator;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>

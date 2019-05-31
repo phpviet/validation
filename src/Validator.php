@@ -27,7 +27,7 @@ class Validator extends BaseValidator
      */
     protected static function getFactory()
     {
-        if (!static::$factory instanceof Factory) {
+        if (! static::$factory instanceof Factory) {
             $factory = static::$factory = new Factory();
             $factory->prependRulePrefix('\\PHPViet\\Validation\\Rules\\');
         }

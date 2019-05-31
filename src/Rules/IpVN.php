@@ -8,11 +8,11 @@
 
 namespace PHPViet\Validation\Rules;
 
-use IPLib\Address\AddressInterface as IpInterface;
-use IPLib\Address\Type as IpType;
 use IPLib\Factory as IpFactory;
-use Respect\Validation\Exceptions\ComponentException;
+use IPLib\Address\Type as IpType;
 use Respect\Validation\Rules\AbstractRule;
+use IPLib\Address\AddressInterface as IpInterface;
+use Respect\Validation\Exceptions\ComponentException;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
@@ -28,7 +28,7 @@ class IpVN extends AbstractRule
 
     public function __construct(?int $version = null)
     {
-        if (null !== $version && !$this->isSupportedVersion($version)) {
+        if (null !== $version && ! $this->isSupportedVersion($version)) {
             throw new ComponentException(sprintf('Only versions %d, %d are supported: %d given', self::IPV4, self::IPV6, $version));
         }
 
@@ -37,7 +37,7 @@ class IpVN extends AbstractRule
 
     public function validate($input): bool
     {
-        if (!$ip = IpFactory::addressFromString($input)) {
+        if (! $ip = IpFactory::addressFromString($input)) {
             return false;
         }
 
@@ -45,7 +45,7 @@ class IpVN extends AbstractRule
             return false;
         }
 
-        if (!$ranges = $this->getIpRanges($input, $version)) {
+        if (! $ranges = $this->getIpRanges($input, $version)) {
             return false;
         }
 
@@ -62,7 +62,7 @@ class IpVN extends AbstractRule
             $map = static::getIpV6Range();
         }
 
-        while (!is_null($key = array_shift($keys))) {
+        while (! is_null($key = array_shift($keys))) {
             if (isset($map[$key])) {
                 $map = $map[$key];
 
@@ -93,7 +93,7 @@ class IpVN extends AbstractRule
         static $range = null;
 
         if (null === $range) {
-            $range = require __DIR__ . '/../../resources/ip-v4-range.php';
+            $range = require __DIR__.'/../../resources/ip-v4-range.php';
         }
 
         return $range;
@@ -104,7 +104,7 @@ class IpVN extends AbstractRule
         static $range = null;
 
         if (null === $range) {
-            $range = require __DIR__ . '/../../resources/ip-v6-range.php';
+            $range = require __DIR__.'/../../resources/ip-v6-range.php';
         }
 
         return $range;
